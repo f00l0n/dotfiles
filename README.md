@@ -1,2 +1,4 @@
 # dotfiles
-my dotfiles :D &lt;3
+→ I3WM
+→ I3-GAPS
+→ VUNDLE
