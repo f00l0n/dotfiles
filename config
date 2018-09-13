@@ -17,7 +17,7 @@ gaps inner 14
 # set compton and wallpaper
 exec_always --no-startup-id compton
 exec_always --no-startup-id compton-trans
-exec_always --no-startup-id feh --bg-scale /home/trance/Wallpapers/920633.jpg
+exec_always --no-startup-id feh --bg-scale /home/foolon/Wallpapers/920633.jpg
 
 # set workspace specific
 assign [class="qutebrowser"] 2: Web
