@@ -29,16 +29,17 @@ gaps inner 14
 exec_always --no-startup-id compton
 exec_always --no-startup-id compton-trans
 exec_always --no-startup-id feh --bg-scale /home/foolon/Wallpapers/920633.jpg
-
 # set workspace specific
 assign [class="qutebrowser"] 2: Web
 exec --no-startup-id qutebrowser
 
+# bar stuff
 bar {
         status_command i3status
 	position top
         font pango: monospace 9.5
         colors {
+                background #1d2226
                 #                       #border #background     #text
                 focused_workspace       #a200ff  #a200ff          #ffffff
                 inactive_workspace      #484848  #484848          #ffffff
