@@ -1,19 +1,10 @@
-#############################################################
-#            __             _                               #
-#           / _| ___   ___ | | ___  _ __  ___               #
-#          | |_ / _ \ / _ \| |/ _ \| '_ \/ __|              #
-#  _ _____ |  _| (_) | (_) | | (_) | | | \__ \  __ _        #
-# (_)___ /_|_|  \___/_\___/|_|\___/|_|_|_|___/ / _(_) __ _  #
-# | | |_ \ \ /\ / / '_ ` _ \   / __/ _ \| '_ \| |_| |/ _` | #
-# | |___) \ V  V /| | | | | | | (_| (_) | | | |  _| | (_| | #
-# |_|____/ \_/\_/ |_| |_| |_|  \___\___/|_| |_|_| |_|\__, | #
-#                                                    |___/  #
-#############################################################
+# border size
+for_window [class="^.*"] border pixel 2
 # border colors
-client.focused          #a200ff #a200ff #ffffff #a200ff
+client.focused          #198844 #198844 #ffffff #198844
 client.unfocused        #484848 #484848 #ffffff #484848
 clinet.focused_inactive #484848 #484848 #ffffff #484848
-client.urgent           #f47835 #f47835 #ffffff #f47835
+client.urgent           #cc342b #cc342b #ffffff #cc342b
 # toggle floating window
 bindsym $mod+Shift+f floating toggle
 # increase and decrease gap size
@@ -28,7 +19,7 @@ gaps inner 14
 # set compton and wallpaper
 exec_always --no-startup-id compton
 exec_always --no-startup-id compton-trans
-exec_always --no-startup-id feh --bg-scale /home/foolon/Wallpapers/920633.jpg
+exec_always --no-startup-id feh --bg-scale /home/skunk/Wallpapers/920633.jpg
 # set workspace specific
 assign [class="qutebrowser"] 2: Web
 exec --no-startup-id qutebrowser
@@ -41,9 +32,9 @@ bar {
         colors {
                 background #1d2226
                 #                       #border #background     #text
-                focused_workspace       #a200ff  #a200ff          #ffffff
+                focused_workspace       #198844  #198844          #ffffff
                 inactive_workspace      #484848  #484848          #ffffff
-                urgent_workspace        #f47835  #f47835          #ffffff
+                urgent_workspace        #cc342b  #cc342b          #ffffff
         }
 }
 
@@ -181,7 +172,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-mode "moveit" {
+mode "move" {
         bindsym Up move up 20px
         bindsym Left move left 20px
         bindsym Down move down 20px
@@ -191,7 +182,7 @@ mode "moveit" {
         bindsym $mod+m mode "default"
 }
 
-bindsym $mod+m mode "moveit"
+bindsym $mod+m mode "move"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
