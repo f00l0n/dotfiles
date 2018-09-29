@@ -1,15 +1,15 @@
 # border size
 for_window [class="^.*"] border pixel 2
 # border colors
-client.focused          #198844 #198844 #ffffff #198844
+client.focused          #3694b8 #3694b8 #ffffff #3694b8
 client.unfocused        #484848 #484848 #ffffff #484848
 clinet.focused_inactive #484848 #484848 #ffffff #484848
-client.urgent           #cc342b #cc342b #ffffff #cc342b
+client.urgent           #FF0000 #FF0000 #ffffff #FF0000
 # toggle floating window
 bindsym $mod+Shift+f floating toggle
 # increase and decrease gap size
 bindsym $mod+z gaps outer current plus 10
-bindsym $mod+Shift+z gaps outer current minux 10
+bindsym $mod+Shift+z gaps outer current minus 10
 # volume control
 bindsym $mod+comma exec amixer set Master -q 5%-
 bindsym $mod+period exec amixer set Master -q 5%+
@@ -19,22 +19,23 @@ gaps inner 14
 # set compton and wallpaper
 exec_always --no-startup-id compton
 exec_always --no-startup-id compton-trans
-exec_always --no-startup-id feh --bg-scale /home/skunk/Wallpapers/920633.jpg
+exec_always --no-startup-id feh --bg-scale /home/flaunt/Wallpapers/chess.png
 # set workspace specific
 assign [class="qutebrowser"] 2: Web
 exec --no-startup-id qutebrowser
-
+# shortcuts
+bindsym $mod+q exec --no-startup-id qutebrowser
 # bar stuff
 bar {
         status_command i3status
 	position top
         font pango: monospace 9.5
         colors {
-                background #1d2226
+                background #000000
                 #                       #border #background     #text
-                focused_workspace       #198844  #198844          #ffffff
-                inactive_workspace      #484848  #484848          #ffffff
-                urgent_workspace        #cc342b  #cc342b          #ffffff
+                focused_workspace       #3694b8  #3694b8          #000000
+                inactive_workspace      #000000  #000000          #ffffff
+                urgent_workspace        #07a5a5  #07a5a5          #ffffff
         }
 }
 
