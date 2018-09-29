@@ -11,7 +11,7 @@ fi
 # User specific aliases and functions
 alias c="clear"
 alias q="exit"
-alias n="neofetch --w3m ~/Wallpapers/920633.jpg"
+alias n="neofetch --w3m ~/Wallpapers/chess.png"
 alias s="shutdown -h now"
 alias r="ranger"
 alias re="reboot"
