@@ -1,46 +1,49 @@
 URxvt.font:             xft:monospace:size=12
 URxvt.scrollBar:        false
+URxvt.depth:            32
+URxvt.background:       [95]#000000
 
 rofi.color-enabled:     true
-rofi.color-window:      #1d1f21, #1d1f21, #1d1f21
-rofi.color-normal:      #1d1f21, #f5f5f5, #1d1f21, #198844, #1d1f21
+rofi.color-window:      #000000, #000000, #000000
+rofi.color-normal:      #000000, #ffffff, #000000, #3694b8, #ffffff
 rofi.lines:             10
 rofi.hide-scrollbar:    true
 rofi.width:             20
+rofi.fullscreen:        true
 
 ! special
-*.foreground:   #c5c8c6
-*.background:   #1d1f21
-*.cursorColor:  #c5c8c6
+*.foreground:   #cdc5c4
+*.background:   #000000
+*.cursorColor:  #cdc5c4
 
 ! black
-*.color0:       #1d1f21
-*.color8:       #969896
+*.color0:       #010101
+*.color8:       #53a8a9
 
 ! red
-*.color1:       #cc342b
-*.color9:       #cc342b
+*.color1:       #b821e0
+*.color9:       #b821e0
 
 ! green
-*.color2:       #198844
-*.color10:      #198844
+*.color2:       #ef07f4
+*.color10:      #ef07f4
 
 ! yellow
-*.color3:       #fba922
-*.color11:      #fba922
+*.color3:       #028989
+*.color11:      #028989
 
 ! blue
-*.color4:       #3971ed
-*.color12:      #3971ed
+*.color4:       #3694b8
+*.color12:      #3694b8
 
 ! magenta
-*.color5:       #a36ac7
-*.color13:      #a36ac7
+*.color5:       #07a5a5
+*.color13:      #07a5a5
 
 ! cyan
-*.color6:       #3971ed
-*.color14:      #3971ed
+*.color6:       #01d0d9
+*.color14:      #01d0d9
 
 ! white
-*.color7:       #c5c8c6
-*.color15:      #ffffff
+*.color7:       #77f1f2
+*.color15:      #77f1f2
