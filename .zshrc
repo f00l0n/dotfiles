@@ -98,7 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias c="clear"
 alias q="exit"
-alias n="neofetch --w3m ~/Wallpapers/30173.jpg"
+alias n="neofetch --w3m ~/Wallpapers/chess.png"
 alias s="shutdown -h now"
 alias r="ranger"
 alias re="reboot"
